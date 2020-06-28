@@ -1,0 +1,20 @@
+Panci
+- Panci bawah sama surface sisanya pisahin materialnya kaya yang gua bilang di Line
+- Txt gagang kiri sama gagang kanan sama, tempel ke dua duanya
+
+Lampu Sorot = Ceiling lamp
+- Texture untuk cover
+- Bola lampu tolong materialnya kasih material untuk gelas
+
+Kulkas
+- Harusnya engga ada yang berubah sama yang kemarin
+
+
+Object yang perlu Material dari unity
+- LED Tube lampu tube = Gelas
+- Ceiling Lamp/Lampu Sorot = Gelas
+- Panci(kecuali bagian bawah) = Chrome
+- Ladle		= Chrome
+
+Tempat sampah ada revisi dikit nanti object sama texturenya nyusul
+

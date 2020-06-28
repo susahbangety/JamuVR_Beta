@@ -1,0 +1,4 @@
+Background color : 0b0b0b
+Selection button : a93c3c
+Font size 	: sekitar 8
+word Type 	:Gill Sans MT Condensed

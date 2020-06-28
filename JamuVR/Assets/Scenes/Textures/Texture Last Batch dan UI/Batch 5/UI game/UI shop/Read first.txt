@@ -1,0 +1,4 @@
+1. Liat preview buat gambarannya 
+2. font style:  Eras Bold ITC
+3. kalo ke pointer ngarah ke frame item dai bakal kek nge size agak gede gtu biar keliatan kalo player lg pointing k mana
+4. klo mencet button beli juga kek ke size gede kecil gtu biar ada animatednya kalo gw dlu pas bikin game itu katanya ga usah pake 2d animation krna di unitynya bisa lbh alus

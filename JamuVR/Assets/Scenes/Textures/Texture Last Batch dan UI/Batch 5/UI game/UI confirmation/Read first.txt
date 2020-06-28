@@ -1,0 +1,7 @@
+1. Liat preview buat gambarannya 
+2. font style:  Eras Bold ITC
+3. tulisannya: Apa anda yakin ingin keluar dari permainan ini?/NO/YES[untuk exit game yang di main menu]
+4. tulisannya: Apa anda yakin ingin membeli produk ini?/NO/YES[untuk confirmation pembelian di shop]
+5. tulisannya: Apa anda yakin ingin memulai challenges mode ini?/NO/YES[untuk confirmation memulai permainan challeges mode]
+6. [kalo ada save game di menu pause] tulisannya: Apa anda ingin melakukan save game?/NO/YES[untuk confirmation save game]
+7. tulisannya: Apa anda yakin ingin keluar atau kembali ke main menu game?/NO/YES[untuk exit game menuju main menu yang di pause menu]
