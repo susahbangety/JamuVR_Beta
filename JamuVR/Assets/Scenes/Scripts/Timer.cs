@@ -10,6 +10,8 @@
     {
         public VRTK_InteractableObject interact;
 
+        public GameObject orderPaper;
+
         public bool countdownMode;
         public Text countdownText;
         public int countdown;
@@ -18,6 +20,7 @@
         public GameObject orderBar;
         public Text prepareText;
         public int round;
+        public bool nextRound;
 
         public Text timerText;
         public float currentTime;
@@ -115,6 +118,35 @@
             round += 1;
             startingTime -= 20;
             currentTime = startingTime;
+            timerText.text = currentTime.ToString();
+            nextRound = true;
+            countdown = 3;
+            StartCoroutine(CountdownNextRound());
+        }
+
+        public IEnumerator CountdownNextRound()
+        {
+            while (countdown > 0)
+            {
+                isChallenge = false;
+                countdownText.enabled = true;
+                countdownMode = true;
+                movePlayer.SetActive(false);
+                countdownText.text = countdown.ToString("0");
+
+                yield return new WaitForSeconds(1f);
+
+                countdown--;
+            }
+            countdownText.text = "Round" + round;
+
+            yield return new WaitForSeconds(1f);
+            isChallenge = true;
+
+            countdownText.enabled = false;
+            movePlayer.SetActive(true);
+            countdownMode = false;
+            nextRound = false;
         }
     }
 }

@@ -9,14 +9,14 @@
     {
         public VRTK_BaseControllable baseControl;
         public VRTK_InteractableObject interact;
-        public VRTK_ControllerEvents.ButtonAlias nextButton;
-        public VRTK_ControllerEvents.ButtonAlias prevButton;
 
         public bool isOpen;
 
         public Texture[] halamanMats;
         public GameObject bukuKiri;
         public GameObject bukuKanan;
+
+        public int index;
 
         private void Update()
         {
@@ -30,6 +30,8 @@
 
             baseControl.MinLimitExited += BookOpen;
             baseControl.MinLimitReached += BookClosed;
+
+            interact.InteractableObjectUsed += ChangePage;
         }
         
         protected virtual void BookOpen(object sender, ControllableEventArgs e)
@@ -44,12 +46,13 @@
 
         protected virtual void ChangePage(object sender, InteractableObjectEventArgs e)
         {
-            if (bukuKiri.GetComponent<Renderer>().materials[2].mainTexture == halamanMats[0] && 
-                bukuKanan.GetComponent<Renderer>().materials[2].mainTexture == halamanMats[0])
-            {
-                bukuKiri.GetComponent<Renderer>().materials[2].mainTexture = halamanMats[1];
-                bukuKanan.GetComponent<Renderer>().materials[2].mainTexture = halamanMats[1];
-            }
+            //if (bukuKiri.GetComponent<Renderer>().materials[2].mainTexture == halamanMats[0] && 
+            //    bukuKanan.GetComponent<Renderer>().materials[2].mainTexture == halamanMats[0])
+            //{
+            //    bukuKiri.GetComponent<Renderer>().materials[2].mainTexture = halamanMats[1];
+            //    bukuKanan.GetComponent<Renderer>().materials[2].mainTexture = halamanMats[1];
+            //}
+            Debug.Log("Used");
         }
     }
 }

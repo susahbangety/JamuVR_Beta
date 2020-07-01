@@ -121,30 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!21 &4425877
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Liquid/SimpleLiquidShader
-  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0, g: 1, b: 0, a: 1}
-    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
-    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &10072298
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,6 +499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &17058722
@@ -625,16 +602,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17185551}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.000024649}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.002366269}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 611890916}
-  m_RootOrder: 2
+  m_Father: {fileID: 1613211652}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000000008614734, y: -0.000000027939677}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 760.33, y: 377.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &17185553
@@ -677,30 +654,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17185551}
   m_CullTransparentMesh: 0
---- !u!21 &19019158
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Liquid/SimpleLiquidShader
-  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0, g: 1, b: 0, a: 1}
-    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
-    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &20881070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,7 +961,7 @@ Transform:
   - {fileID: 338403025}
   - {fileID: 2047513700}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &26961240
 GameObject:
@@ -1261,6 +1214,30 @@ Transform:
   m_Father: {fileID: 910072370}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &33955772
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Liquid/SimpleLiquidShader
+  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0, g: 1, b: 0, a: 1}
+    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
+    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &35182325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1843,36 +1820,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3, type: 3}
---- !u!1 &37137829 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1384746914293964, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 3}
-  m_PrefabInstance: {fileID: 393107949}
-  m_PrefabAsset: {fileID: 0}
---- !u!21 &37162830
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Liquid/SimpleLiquidShader
-  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.77647066, g: 0.5254902, b: 0.22352943, a: 1}
-    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
-    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &41502797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1903,12 +1850,6 @@ Transform:
   m_Father: {fileID: 1594298348}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 11.280001}
---- !u!1 &45361994 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000013941130086, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 3}
-  m_PrefabInstance: {fileID: 393107949}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &52398176
 GameObject:
   m_ObjectHideFlags: 0
@@ -2286,6 +2227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &64708866
@@ -2591,6 +2533,30 @@ Transform:
   m_Father: {fileID: 199951338}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &74584557
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Liquid/SimpleLiquidShader
+  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0, g: 1, b: 0, a: 1}
+    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
+    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &76584905
 GameObject:
   m_ObjectHideFlags: 0
@@ -2876,6 +2842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &81378866
@@ -3424,6 +3391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &93828310
@@ -3627,6 +3595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &94769761
@@ -3838,6 +3807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &95650357
@@ -4045,6 +4015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &98444556
@@ -4238,6 +4209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &98917552
@@ -4432,6 +4404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &98992863
@@ -4547,6 +4520,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -25}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!21 &99961084
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Liquid/SimpleLiquidShader
+  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0, g: 1, b: 0, a: 1}
+    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
+    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &103369855
 GameObject:
   m_ObjectHideFlags: 0
@@ -4954,6 +4951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &119750790
@@ -5148,6 +5146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &121435931
@@ -5387,6 +5386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &135237058
@@ -5656,6 +5656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &146043243
@@ -6185,6 +6186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &164483442
@@ -6394,6 +6396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &169114490
@@ -6613,6 +6616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &173191874
@@ -6916,7 +6920,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1636478971}
+  - {fileID: 1053872106}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7151,6 +7155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &185354557
@@ -7514,7 +7519,7 @@ MonoBehaviour:
   isOpen: 1
   inertness: 50
   liquidColor: {r: 0.77647066, g: 0.5254902, b: 0.22352943, a: 1}
-  fillAmountPercent: 1
+  fillAmountPercent: 0
   customVolume: 0
 --- !u!114 &199951336
 MonoBehaviour:
@@ -8059,6 +8064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &232908001
@@ -8314,16 +8320,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239628396}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1586666936}
-  m_RootOrder: 2
+  m_Father: {fileID: 434352718}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 70.715, y: 15.91}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 15.910011}
   m_SizeDelta: {x: 141.43, y: 31.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &239628398
@@ -8339,7 +8345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8351,7 +8357,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
-    m_Alignment: 3
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -8592,6 +8598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &244088705
@@ -8685,30 +8692,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244784790}
   m_CullTransparentMesh: 0
---- !u!21 &247033277
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Liquid/SimpleLiquidShader
-  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.77647066, g: 0.5254902, b: 0.22352943, a: 1}
-    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
-    - _SurfaceLevel: {r: -2.667, g: 1.5150291, b: -4.219, a: 0}
 --- !u!1 &248777800
 GameObject:
   m_ObjectHideFlags: 0
@@ -8883,6 +8866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &249061959
@@ -9012,7 +8996,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1571091267}
+  - {fileID: 33955772}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9086,7 +9070,7 @@ Transform:
   m_Children:
   - {fileID: 1586666936}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &262519850
 MonoBehaviour:
@@ -9335,6 +9319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &269633019
@@ -9654,6 +9639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &277901415
@@ -9933,6 +9919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &284997817
@@ -10203,6 +10190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &290209402
@@ -10396,6 +10384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &296424012
@@ -10697,7 +10686,7 @@ Transform:
   - {fileID: 602365305}
   - {fileID: 1316588496}
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &299551028
 MonoBehaviour:
@@ -10934,6 +10923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &307789112
@@ -11377,6 +11367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &324956118
@@ -11589,30 +11580,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327030412}
   m_CullTransparentMesh: 0
---- !u!21 &328341791
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Liquid/SimpleLiquidShader
-  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
-    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &329250927
 GameObject:
   m_ObjectHideFlags: 0
@@ -11719,7 +11686,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 597187348}
+  - {fileID: 1289249766}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12075,6 +12042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &353679766
@@ -12479,6 +12447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &371117846
@@ -12619,6 +12588,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372236195}
   m_CullTransparentMesh: 0
+--- !u!1 &373876592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 373876593}
+  - component: {fileID: 373876595}
+  - component: {fileID: 373876594}
+  m_Layer: 0
+  m_Name: BG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &373876593
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373876592}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 488796108}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &373876594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373876592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.4392157}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &373876595
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373876592}
+  m_CullTransparentMesh: 0
 --- !u!1 &374433093
 GameObject:
   m_ObjectHideFlags: 0
@@ -12749,6 +12791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &374433100
@@ -13177,6 +13220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &387779164
@@ -13387,6 +13431,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be540b97364be0a4890e39e62ac89ed1, type: 3}
+--- !u!1 &393107950 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1883185261795400, guid: be540b97364be0a4890e39e62ac89ed1,
+    type: 3}
+  m_PrefabInstance: {fileID: 393107949}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &393107951 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1384746914293964, guid: be540b97364be0a4890e39e62ac89ed1,
+    type: 3}
+  m_PrefabInstance: {fileID: 393107949}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &393107952 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1391022766006510, guid: be540b97364be0a4890e39e62ac89ed1,
+    type: 3}
+  m_PrefabInstance: {fileID: 393107949}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &393107953 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1538727058887424, guid: be540b97364be0a4890e39e62ac89ed1,
+    type: 3}
+  m_PrefabInstance: {fileID: 393107949}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &393107954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1587602180963074, guid: be540b97364be0a4890e39e62ac89ed1,
+    type: 3}
+  m_PrefabInstance: {fileID: 393107949}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &393107955 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013941130086, guid: be540b97364be0a4890e39e62ac89ed1,
+    type: 3}
+  m_PrefabInstance: {fileID: 393107949}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &394621718
 GameObject:
   m_ObjectHideFlags: 0
@@ -13720,6 +13800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &410648435
@@ -13926,6 +14007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &412712694
@@ -13991,30 +14073,6 @@ MonoBehaviour:
   objectHighlighter: {fileID: 0}
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   usingState: 0
---- !u!21 &416999001
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Liquid/SimpleLiquidShader
-  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0, g: 1, b: 0, a: 1}
-    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
-    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &419481307
 GameObject:
   m_ObjectHideFlags: 0
@@ -14311,7 +14369,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 0
 --- !u!222 &425373508
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14491,6 +14549,7 @@ MonoBehaviour:
     minProb: 0
     maxProb: 50
   orderPaper: {fileID: 1222949938}
+  originalPos: {fileID: 0}
   orderingTime: 0
   orderTimeText: {fileID: 772345956}
   totalHarga: {fileID: 384891286}
@@ -14653,6 +14712,80 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 431227532}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &434352717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 434352718}
+  - component: {fileID: 434352720}
+  - component: {fileID: 434352719}
+  m_Layer: 0
+  m_Name: BG Nama Bahan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &434352718
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434352717}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 239628397}
+  m_Father: {fileID: 1586666936}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -127.877235}
+  m_SizeDelta: {x: -282.2426, y: -285.93448}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &434352719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434352717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.74509805}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &434352720
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434352717}
+  m_CullTransparentMesh: 0
 --- !u!1 &434752092
 GameObject:
   m_ObjectHideFlags: 0
@@ -14995,6 +15128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &443149852
@@ -15203,6 +15337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &445580460
@@ -15455,6 +15590,85 @@ Transform:
   m_Father: {fileID: 230280451}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 62.735004, z: 0}
+--- !u!1 &459281131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 459281132}
+  - component: {fileID: 459281134}
+  - component: {fileID: 459281133}
+  m_Layer: 0
+  m_Name: Rating
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &459281132
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459281131}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1524017951}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -63.5, y: 0}
+  m_SizeDelta: {x: 123.69, y: 70.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &459281133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459281131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: c3f06529a2a254e4cb47b1076325d5d3, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Rating
+
+'
+--- !u!222 &459281134
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459281131}
+  m_CullTransparentMesh: 0
 --- !u!1 &463492436
 GameObject:
   m_ObjectHideFlags: 0
@@ -15868,6 +16082,44 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &488796107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 488796108}
+  m_Layer: 0
+  m_Name: PostGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &488796108
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488796107}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 373876593}
+  - {fileID: 990165735}
+  - {fileID: 843349554}
+  m_Father: {fileID: 611890916}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &490216553
 GameObject:
   m_ObjectHideFlags: 0
@@ -15928,6 +16180,30 @@ Transform:
   m_Father: {fileID: 2002595840}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &495058616
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Liquid/SimpleLiquidShader
+  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0, g: 1, b: 0, a: 1}
+    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
+    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &498147720
 GameObject:
   m_ObjectHideFlags: 0
@@ -16352,6 +16628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &505822548
@@ -16697,8 +16974,32 @@ Transform:
   m_Children:
   - {fileID: 1616969871269561335}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &515081209
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Liquid/SimpleLiquidShader
+  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
+    - _SurfaceLevel: {r: 3.068, g: 1.2937559, b: -4.25, a: 0}
 --- !u!1 &519545400
 GameObject:
   m_ObjectHideFlags: 0
@@ -17920,6 +18221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &573335229
@@ -17983,6 +18285,83 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573335221}
   m_Mesh: {fileID: -7131622518513738963, guid: a3442724131a9eb4cb4a9b61ccc74350, type: 3}
+--- !u!1 &573460921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 573460922}
+  - component: {fileID: 573460924}
+  - component: {fileID: 573460923}
+  m_Layer: 0
+  m_Name: AngkaRating
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &573460922
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573460921}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1524017951}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 65.7, y: 0}
+  m_SizeDelta: {x: 123.69, y: 70.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &573460923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573460921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: c3f06529a2a254e4cb47b1076325d5d3, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 100%
+--- !u!222 &573460924
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573460921}
+  m_CullTransparentMesh: 0
 --- !u!1 &576468738
 GameObject:
   m_ObjectHideFlags: 0
@@ -18290,6 +18669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &594797599
@@ -18457,30 +18837,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.05
   m_Center: {x: 0, y: 0, z: 0}
---- !u!21 &597187348
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Liquid/SimpleLiquidShader
-  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
-    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &599717512
 GameObject:
   m_ObjectHideFlags: 0
@@ -18613,6 +18969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &599717519
@@ -18813,7 +19170,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 4425877}
+  - {fileID: 99961084}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19067,6 +19424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &605864137
@@ -19205,7 +19563,7 @@ GameObject:
   - component: {fileID: 611890918}
   - component: {fileID: 611890917}
   m_Layer: 0
-  m_Name: Round
+  m_Name: InGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19222,9 +19580,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 2.614}
   m_LocalScale: {x: 0.0022382182, y: 0.0021311543, z: 0.0006045431}
   m_Children:
-  - {fileID: 708636146}
-  - {fileID: 1505459814}
-  - {fileID: 17185552}
+  - {fileID: 1613211652}
+  - {fileID: 488796108}
   m_Father: {fileID: 3659948329723452361}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -19356,6 +19713,80 @@ Material:
     - _Color: {r: 0, g: 0.68485904, b: 1, a: 0.39215687}
     - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
     - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
+--- !u!1 &626898037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 626898038}
+  - component: {fileID: 626898040}
+  - component: {fileID: 626898039}
+  m_Layer: 0
+  m_Name: BG OrderTimer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &626898038
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626898037}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 772345955}
+  m_Father: {fileID: 1586666936}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -15.002243}
+  m_SizeDelta: {x: 66.4126, y: 30.004486}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &626898039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626898037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.74509805}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &626898040
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626898037}
+  m_CullTransparentMesh: 0
 --- !u!1 &630248677
 GameObject:
   m_ObjectHideFlags: 0
@@ -19871,7 +20302,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &638439001 stripped
 CapsuleCollider:
@@ -20009,6 +20440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &649819672
@@ -20697,6 +21129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &679592174
@@ -21229,7 +21662,7 @@ Transform:
   - {fileID: 1201160149}
   - {fileID: 563231597}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &697357489
 MonoBehaviour:
@@ -21706,7 +22139,7 @@ Transform:
   - {fileID: 1318460531}
   - {fileID: 1648685678}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &704372512
 MonoBehaviour:
@@ -21889,7 +22322,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &708636145
 GameObject:
@@ -21916,12 +22349,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708636145}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.0000015405}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.002366269}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 611890916}
-  m_RootOrder: 0
+  m_Father: {fileID: 1613211652}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -21968,6 +22401,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708636145}
   m_CullTransparentMesh: 0
+--- !u!21 &710445549
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Liquid/SimpleLiquidShader
+  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.77647066, g: 0.5254902, b: 0.22352943, a: 1}
+    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
+    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &712704047
 GameObject:
   m_ObjectHideFlags: 0
@@ -22230,6 +22687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &724211370
@@ -22518,6 +22976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &726294994
@@ -22723,6 +23182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &727153733
@@ -22932,6 +23392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!23 &728937225
@@ -23127,6 +23588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &732479887
@@ -23483,7 +23945,7 @@ Transform:
   - {fileID: 1065477162}
   - {fileID: 631291488}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &751755659
 MonoBehaviour:
@@ -23786,6 +24248,145 @@ Transform:
   m_Father: {fileID: 230280451}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -59.12, y: 0, z: 0}
+--- !u!1 &764172575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 764172576}
+  - component: {fileID: 764172580}
+  - component: {fileID: 764172579}
+  - component: {fileID: 764172578}
+  - component: {fileID: 764172577}
+  m_Layer: 0
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &764172576
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764172575}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 2.357}
+  m_LocalScale: {x: 0.008, y: 0.008, z: 0.008}
+  m_Children:
+  - {fileID: 2008313186}
+  - {fileID: 829355512}
+  m_Father: {fileID: 1382372154}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 3.594, y: 1.668}
+  m_SizeDelta: {x: 423.6726, y: 317.7545}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &764172577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764172575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1518a5e598c7da244bc4850d3ae63354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickOnPointerCollision: 0
+  autoActivateWithinDistance: 0
+--- !u!114 &764172578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764172575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &764172579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764172575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &764172580
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764172575}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!21 &764429391
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Liquid/SimpleLiquidShader
+  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
+    - _SurfaceLevel: {r: -2.6692998, g: 1.236793, b: -0.0436998, a: 0}
 --- !u!1 &766150479
 GameObject:
   m_ObjectHideFlags: 0
@@ -23842,7 +24443,7 @@ GameObject:
   - component: {fileID: 772345957}
   - component: {fileID: 772345956}
   m_Layer: 0
-  m_Name: Timer
+  m_Name: OrderTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23855,17 +24456,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772345954}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1586666936}
+  m_Father: {fileID: 626898038}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -15}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &772345956
 MonoBehaviour:
@@ -23880,7 +24481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -24176,6 +24777,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doneOrdering: []
+  orderBar: {fileID: 0}
+  orderParent: {fileID: 0}
   orderPaper: []
   clearText: {fileID: 0}
   timer: {fileID: 0}
@@ -24192,7 +24795,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &788427232
 GameObject:
@@ -24324,6 +24927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &788427239
@@ -24495,6 +25099,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792029609}
   m_CullTransparentMesh: 0
+--- !u!21 &793479822
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Liquid/SimpleLiquidShader
+  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.77647066, g: 0.5254902, b: 0.22352943, a: 1}
+    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
+    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &794196605
 GameObject:
   m_ObjectHideFlags: 0
@@ -24639,6 +25267,7 @@ MonoBehaviour:
     minProb: 0
     maxProb: 0
   orderPaper: {fileID: 530104388}
+  originalPos: {fileID: 0}
   orderingTime: 0
   orderTimeText: {fileID: 772345956}
   totalHarga: {fileID: 285595517}
@@ -25037,6 +25666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &810676114
@@ -25320,6 +25950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &811950321
@@ -25575,6 +26206,124 @@ MonoBehaviour:
   releaseFriction: 10
   onlyInteractWith:
   - {fileID: 6447767543321829012}
+--- !u!1 &829355511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 829355512}
+  - component: {fileID: 829355515}
+  - component: {fileID: 829355514}
+  - component: {fileID: 829355513}
+  m_Layer: 0
+  m_Name: NextButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &829355512
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829355511}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2088262509}
+  m_Father: {fileID: 764172576}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 177.7, y: -146.28}
+  m_SizeDelta: {x: 59.8, y: 17.25}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &829355513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829355511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 829355514}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &829355514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829355511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &829355515
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829355511}
+  m_CullTransparentMesh: 0
 --- !u!1 &832533983
 GameObject:
   m_ObjectHideFlags: 0
@@ -25763,6 +26512,83 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 838376798}
   m_Mesh: {fileID: -7131622518513738963, guid: a3442724131a9eb4cb4a9b61ccc74350, type: 3}
+--- !u!1 &843349553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 843349554}
+  - component: {fileID: 843349556}
+  - component: {fileID: 843349555}
+  m_Layer: 0
+  m_Name: AngkaRating
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &843349554
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843349553}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00004467565}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 488796108}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 127.20006, y: 0}
+  m_SizeDelta: {x: 132.59, y: 75.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &843349555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843349553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: c3f06529a2a254e4cb47b1076325d5d3, type: 3}
+    m_FontSize: 60
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &843349556
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843349553}
+  m_CullTransparentMesh: 0
 --- !u!1 &846256805
 GameObject:
   m_ObjectHideFlags: 0
@@ -25837,36 +26663,6 @@ Transform:
   m_Father: {fileID: 1153800505}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -4.808, y: 0, z: 0}
---- !u!21 &846905593
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Liquid/SimpleLiquidShader
-  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 0.39215687}
-    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
-    - _SurfaceLevel: {r: 3.068, g: 1.2937559, b: -4.25, a: 0}
---- !u!1 &846925531 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1587602180963074, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 3}
-  m_PrefabInstance: {fileID: 393107949}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &847713015
 GameObject:
   m_ObjectHideFlags: 0
@@ -26170,6 +26966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &854332921
@@ -26493,6 +27290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &866181608
@@ -26701,6 +27499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &866257824
@@ -27002,6 +27801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &876072817
@@ -27350,6 +28150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &886611815
@@ -27653,6 +28454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &895419407
@@ -27892,6 +28694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &899202551
@@ -28403,7 +29206,7 @@ Transform:
   - {fileID: 1458920564}
   - {fileID: 32351239}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &910072371
 MonoBehaviour:
@@ -28673,6 +29476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &916211537
@@ -29163,6 +29967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &929834028
@@ -29377,30 +30182,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.17241764, y: 0.0060737357, z: 0.17097759}
   m_Center: {x: 0, y: -0.02196313, z: 0}
---- !u!21 &949282163
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Liquid/SimpleLiquidShader
-  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0, g: 1, b: 0, a: 1}
-    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
-    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &951400256
 GameObject:
   m_ObjectHideFlags: 0
@@ -30270,12 +31051,83 @@ Transform:
   m_Father: {fileID: 1375782848}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &994209264 stripped
+--- !u!1 &990165734
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1538727058887424, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 3}
-  m_PrefabInstance: {fileID: 393107949}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 990165735}
+  - component: {fileID: 990165737}
+  - component: {fileID: 990165736}
+  m_Layer: 0
+  m_Name: Rating
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &990165735
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990165734}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 488796108}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -72, y: 0}
+  m_SizeDelta: {x: 278.01, y: 75.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &990165736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990165734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: c3f06529a2a254e4cb47b1076325d5d3, type: 3}
+    m_FontSize: 60
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Quality Rating
+--- !u!222 &990165737
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990165734}
+  m_CullTransparentMesh: 0
 --- !u!1 &998630253
 GameObject:
   m_ObjectHideFlags: 0
@@ -30407,6 +31259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &998630260
@@ -30651,6 +31504,30 @@ MonoBehaviour:
   releaseFriction: 10
   onlyInteractWith:
   - {fileID: 1917576522}
+--- !u!21 &1015172629
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Liquid/SimpleLiquidShader
+  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0, g: 1, b: 0, a: 1}
+    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
+    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &1017001976
 GameObject:
   m_ObjectHideFlags: 0
@@ -30872,6 +31749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &1023598877
@@ -31030,7 +31908,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1477059723}
+  - {fileID: 764429391}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31265,6 +32143,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048491602}
   m_CullTransparentMesh: 0
+--- !u!21 &1053872106
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Liquid/SimpleLiquidShader
+  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
+    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &1055536708
 GameObject:
   m_ObjectHideFlags: 0
@@ -31426,7 +32328,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2004168535}
+  - {fileID: 1482385543}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31720,6 +32622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &1069234424
@@ -32199,6 +33102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1085128731
@@ -32470,6 +33374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1085984969
@@ -32818,6 +33723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1091374308
@@ -33011,6 +33917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1095072431
@@ -33128,7 +34035,7 @@ Transform:
   - {fileID: 1359388548}
   - {fileID: 1271607069}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1096824095
 MonoBehaviour:
@@ -33188,7 +34095,7 @@ MonoBehaviour:
   holdButtonToUse: 0
   useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
-  useOverrideButton: 0
+  useOverrideButton: 14
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
@@ -33207,8 +34114,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseControl: {fileID: 1359388549}
   interact: {fileID: 0}
-  nextButton: 14
-  prevButton: 16
   isOpen: 0
   halamanMats:
   - {fileID: 2800000, guid: ed77a9b6336b27047b523227f572842a, type: 3}
@@ -33220,6 +34125,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 9288b1ff08f3ecf4896d9911dfa75dae, type: 3}
   bukuKiri: {fileID: 5059325434857150083}
   bukuKanan: {fileID: 3188352618557899607}
+  index: 0
 --- !u!1 &1097096005
 GameObject:
   m_ObjectHideFlags: 0
@@ -33535,6 +34441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &1105105642
@@ -33681,6 +34588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!23 &1105105650
@@ -34246,6 +35154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1129402083
@@ -34510,7 +35419,7 @@ Transform:
   m_LocalScale: {x: 0.20000002, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1139270440
 MonoBehaviour:
@@ -34526,30 +35435,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   capMaterial: {fileID: 2100000, guid: 6ea491f82329b774d8b8af4a409d8d03, type: 3}
   namaBahan: 
---- !u!21 &1140023751
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Liquid/SimpleLiquidShader
-  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
-    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &1144308255
 GameObject:
   m_ObjectHideFlags: 0
@@ -34680,6 +35565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1144308262
@@ -34906,6 +35792,30 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160669935}
   m_Mesh: {fileID: -1705833610695083558, guid: 3c464a55e30ab6a4c8e9ace945d21658, type: 3}
+--- !u!21 &1161583652
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Liquid/SimpleLiquidShader
+  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0, g: 1, b: 0, a: 1}
+    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
+    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!21 &1162409189
 Material:
   serializedVersion: 6
@@ -35138,6 +36048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1167855811
@@ -35514,6 +36425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1178078552
@@ -35737,6 +36649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1180444045
@@ -35866,7 +36779,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 416999001}
+  - {fileID: 1161583652}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -36729,6 +37642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1237154240
@@ -37015,6 +37929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1240328595
@@ -37531,7 +38446,7 @@ Transform:
   m_LocalScale: {x: 0.543102, y: 0.543102, z: 0.543102}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1253013997
 GameObject:
@@ -38062,6 +38977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1281155085
@@ -38358,6 +39274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1286411774
@@ -38423,6 +39340,30 @@ MonoBehaviour:
   objectHighlighter: {fileID: 0}
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   usingState: 0
+--- !u!21 &1289249766
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Liquid/SimpleLiquidShader
+  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
+    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &1298261529
 GameObject:
   m_ObjectHideFlags: 0
@@ -38614,6 +39555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &1301913835
@@ -38828,6 +39770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1302517364
@@ -38968,7 +39911,7 @@ Transform:
   - {fileID: 4261304339911406079}
   - {fileID: 815135029}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1304972501
 GameObject:
@@ -39114,6 +40057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!23 &1304972509
@@ -39240,30 +40184,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305870135}
   m_CullTransparentMesh: 0
---- !u!21 &1311816636
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Liquid/SimpleLiquidShader
-  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0, g: 1, b: 0, a: 1}
-    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
-    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &1316588495
 GameObject:
   m_ObjectHideFlags: 0
@@ -39330,7 +40250,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1311816636}
+  - {fileID: 1015172629}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39517,6 +40437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!23 &1320899398
@@ -39830,6 +40751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1330458559
@@ -40219,6 +41141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1340077558
@@ -40519,6 +41442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1342071750
@@ -40876,6 +41800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1349715268
@@ -41070,7 +41995,7 @@ Transform:
   m_LocalScale: {x: 2.5, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1353958707
 GameObject:
@@ -41464,6 +42389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &1361347837
@@ -41596,6 +42522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1361347844
@@ -41897,6 +42824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1366135042
@@ -41971,7 +42899,7 @@ Transform:
   - {fileID: 2142298761}
   - {fileID: 1470214151}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1367171782
 GameObject:
@@ -42104,6 +43032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1367171789
@@ -42263,7 +43192,7 @@ Transform:
   - {fileID: 1647160416}
   - {fileID: 1798387765}
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1367669042
 MonoBehaviour:
@@ -42802,6 +43731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1382316693
@@ -42893,6 +43823,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382316686}
   m_Mesh: {fileID: -8487191819050935142, guid: 1c0d6fde434c020498c5a7bfaa3a81ec, type: 3}
+--- !u!1 &1382372153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1382372154}
+  m_Layer: 0
+  m_Name: TutorialUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1382372154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382372153}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 764172576}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1389546377
 GameObject:
   m_ObjectHideFlags: 0
@@ -43099,6 +44060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1398477626
@@ -43460,6 +44422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &1399423715
@@ -43714,6 +44677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1402822505
@@ -44064,6 +45028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1427007472
@@ -44443,6 +45408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &1433240750
@@ -44691,6 +45657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1437689259
@@ -45011,6 +45978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1440729602
@@ -45269,6 +46237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1445487391
@@ -45537,6 +46506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &1447971047
@@ -45825,6 +46795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1452452342
@@ -46053,6 +47024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1455083698
@@ -46197,7 +47169,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 19019158}
+  - {fileID: 495058616}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -46432,6 +47404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1460095822
@@ -46578,6 +47551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1469038941
@@ -46742,30 +47716,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!21 &1477059723
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Liquid/SimpleLiquidShader
-  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 0.39215687}
-    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
-    - _SurfaceLevel: {r: -2.6692998, g: 1.236793, b: -0.0436998, a: 0}
 --- !u!1 &1480655220
 GameObject:
   m_ObjectHideFlags: 0
@@ -46810,6 +47760,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.00021654218, y: 0.008749235, z: 0.0024393771}
   m_Center: {x: 0.00021582739, y: 0.00007210032, z: -0.0006458993}
+--- !u!21 &1482385543
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Liquid/SimpleLiquidShader
+  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0, g: 1, b: 0, a: 1}
+    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
+    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &1486753848
 GameObject:
   m_ObjectHideFlags: 0
@@ -47002,6 +47976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1486753858
@@ -47280,7 +48255,7 @@ Transform:
   - {fileID: 1906648426}
   - {fileID: 1397257835}
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -90}
 --- !u!1 &1504843760
 GameObject:
@@ -47337,11 +48312,11 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505459813}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.002366269}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 611890916}
+  m_Father: {fileID: 1613211652}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
@@ -47400,12 +48375,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a,
     type: 3}
   m_PrefabInstance: {fileID: 1341843265}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1506384503 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1883185261795400, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 3}
-  m_PrefabInstance: {fileID: 393107949}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1509480872
 GameObject:
@@ -47552,6 +48521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1509480880
@@ -47960,8 +48930,46 @@ Transform:
   - {fileID: 1326983447}
   - {fileID: 1345621348}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1524017950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1524017951}
+  m_Layer: 0
+  m_Name: PostGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1524017951
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524017950}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2067303482}
+  - {fileID: 459281132}
+  - {fileID: 573460922}
+  m_Father: {fileID: 1586666936}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1536308135
 GameObject:
   m_ObjectHideFlags: 0
@@ -48150,6 +49158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1545276162
@@ -48435,6 +49444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1551520669
@@ -48693,7 +49703,7 @@ Transform:
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1559608874
 GameObject:
@@ -48951,6 +49961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1565141651
@@ -49148,30 +50159,6 @@ Transform:
   m_Father: {fileID: 1634405077}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1571091267
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Liquid/SimpleLiquidShader
-  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0, g: 1, b: 0, a: 1}
-    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
-    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &1572008740
 GameObject:
   m_ObjectHideFlags: 0
@@ -49395,6 +50382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!23 &1575534046
@@ -49505,10 +50493,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 1.454}
   m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
   m_Children:
-  - {fileID: 772345955}
+  - {fileID: 626898038}
   - {fileID: 1985484560}
-  - {fileID: 239628397}
+  - {fileID: 434352718}
   - {fileID: 1109387254}
+  - {fileID: 1524017951}
   m_Father: {fileID: 262519849}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -49785,6 +50774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1595488240
@@ -49980,6 +50970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1599636001
@@ -50173,6 +51164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1601644769
@@ -50477,6 +51469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1608316126
@@ -50568,6 +51561,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   capMaterial: {fileID: 2100000, guid: 84fbbbcad87d83e4082fe371f33bc461, type: 2}
   namaBahan: 
+--- !u!1 &1613211651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1613211652}
+  m_Layer: 0
+  m_Name: MidGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1613211652
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613211651}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 17185552}
+  - {fileID: 1505459814}
+  - {fileID: 708636146}
+  m_Father: {fileID: 611890916}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1613422465
 GameObject:
   m_ObjectHideFlags: 0
@@ -50996,6 +52027,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1632521620
@@ -51258,6 +52290,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doneOrdering: []
+  orderBar: {fileID: 9102996127729848129, guid: cfbb4562264410645b5fec31f5755a4b,
+    type: 3}
+  orderParent: {fileID: 9173456026543653612}
   orderPaper:
   - {fileID: 8027032363305499986}
   clearText: {fileID: 17185553}
@@ -51342,30 +52377,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635083582}
   m_Mesh: {fileID: -8487191819050935142, guid: 1c0d6fde434c020498c5a7bfaa3a81ec, type: 3}
---- !u!21 &1636478971
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Liquid/SimpleLiquidShader
-  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
-    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &1636520088
 GameObject:
   m_ObjectHideFlags: 0
@@ -51721,6 +52732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1646916498
@@ -52204,6 +53216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1653948354
@@ -52310,7 +53323,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1656432601
 GameObject:
@@ -52550,7 +53563,7 @@ Transform:
   - {fileID: 1947399068}
   - {fileID: 1504843761}
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1656432613
 MonoBehaviour:
@@ -52742,6 +53755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1660600165
@@ -53161,6 +54175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1674502691
@@ -53372,6 +54387,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.00050662033, y: 0.00017155654, z: 0.0015923015}
   m_Center: {x: -0.00009510513, y: 0.00000031344592, z: -0.0013702562}
+--- !u!21 &1685891441
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Liquid/SimpleLiquidShader
+  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0, g: 1, b: 0.06572652, a: 0.39215687}
+    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
+    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &1690692948
 GameObject:
   m_ObjectHideFlags: 0
@@ -53773,6 +54812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1692978603
@@ -53824,19 +54864,13 @@ Transform:
   - {fileID: 1569542062}
   - {fileID: 10072299}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1701722902 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 109308, guid: 126d619cf4daa52469682f85c1378b4a,
     type: 3}
   m_PrefabInstance: {fileID: 1341843265}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1701833371 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1391022766006510, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 3}
-  m_PrefabInstance: {fileID: 393107949}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1702069587
 GameObject:
@@ -54668,6 +55702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1746574833
@@ -55121,6 +56156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1757382648
@@ -55408,6 +56444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1764119101
@@ -55802,6 +56839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1770291619
@@ -56008,6 +57046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1773385219
@@ -56203,6 +57242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1773914143
@@ -56394,6 +57434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1778923084
@@ -56762,7 +57803,7 @@ Transform:
   - {fileID: 158932536}
   - {fileID: 181079327}
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1784371294
 MonoBehaviour:
@@ -56936,12 +57977,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPopulateObjectReferences: 1
-  actualBoundaries: {fileID: 45361994}
-  actualHeadset: {fileID: 846925531}
-  actualLeftController: {fileID: 994209264}
-  actualRightController: {fileID: 1701833371}
-  modelAliasLeftController: {fileID: 37137829}
-  modelAliasRightController: {fileID: 1506384503}
+  actualBoundaries: {fileID: 393107955}
+  actualHeadset: {fileID: 393107954}
+  actualLeftController: {fileID: 393107953}
+  actualRightController: {fileID: 393107952}
+  modelAliasLeftController: {fileID: 393107951}
+  modelAliasRightController: {fileID: 393107950}
   cachedSystemSDKInfo:
     baseTypeName: VRTK.SDK_BaseSystem
     fallbackTypeName: VRTK.SDK_FallbackSystem
@@ -57106,7 +58147,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 328341791}
+  - {fileID: 1978361065}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -57353,6 +58394,30 @@ Transform:
   m_Father: {fileID: 1304663151}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &1817893693
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Liquid/SimpleLiquidShader
+  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.38823533, g: 0.14509805, b: 0.09411766, a: 1}
+    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
+    - _SurfaceLevel: {r: 3.2409, g: 1.5255204, b: -1.501, a: 0}
 --- !u!1 &1819128633
 GameObject:
   m_ObjectHideFlags: 0
@@ -57514,6 +58579,7 @@ MonoBehaviour:
     minProb: 0
     maxProb: 50
   orderPaper: {fileID: 475775141}
+  originalPos: {fileID: 0}
   orderingTime: 0
   orderTimeText: {fileID: 772345956}
   totalHarga: {fileID: 1712753784}
@@ -57732,6 +58798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!23 &1835885784
@@ -57989,6 +59056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1837219007
@@ -58498,30 +59566,6 @@ Transform:
   m_Father: {fileID: 1269669511}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 156.175, z: 0}
---- !u!21 &1861624400
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Liquid/SimpleLiquidShader
-  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0, g: 1, b: 0.06572652, a: 0.39215687}
-    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
-    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!21 &1862471397
 Material:
   serializedVersion: 6
@@ -58787,6 +59831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1865598956
@@ -59160,7 +60205,7 @@ Transform:
   - {fileID: 262236483}
   - {fileID: 1607936960}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1877160589
 MonoBehaviour:
@@ -60009,6 +61054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &1922843243
@@ -60247,6 +61293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1928566035
@@ -61030,7 +62077,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 949282163}
+  - {fileID: 74584557}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -61775,6 +62822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1961045169
@@ -61928,6 +62976,30 @@ Transform:
   m_Father: {fileID: 453650550}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 107.816, z: 0}
+--- !u!21 &1978361065
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Liquid/SimpleLiquidShader
+  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
+    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &1981349275
 GameObject:
   m_ObjectHideFlags: 0
@@ -62059,6 +63131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1981349282
@@ -62543,6 +63616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &1994825712
@@ -62846,6 +63920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &2001571393
@@ -63006,6 +64081,7 @@ MonoBehaviour:
     minProb: 0
     maxProb: 0
   orderPaper: {fileID: 8027032363305499986}
+  originalPos: {fileID: 9173456026543653612}
   orderingTime: 0
   orderTimeText: {fileID: 772345956}
   totalHarga: {fileID: 675766183}
@@ -63155,30 +64231,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002595839}
   m_Mesh: {fileID: -3331655021579669560, guid: 58444daff512de64c9541887ace5cc87, type: 3}
---- !u!21 &2004168535
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Liquid/SimpleLiquidShader
-  m_Shader: {fileID: 4800000, guid: e7160743a8e23594ab23959c0b07279b, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0, g: 1, b: 0, a: 1}
-    - _GravityDirection: {r: 0, g: -1, b: 0, a: 0}
-    - _SurfaceLevel: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &2005946684
 GameObject:
   m_ObjectHideFlags: 0
@@ -63323,6 +64375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!23 &2005946692
@@ -63372,6 +64425,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005946684}
   m_Mesh: {fileID: -5212075878227866937, guid: b307e92ccc4ff2a4ebc669685f16502e, type: 3}
+--- !u!1 &2008313185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2008313186}
+  - component: {fileID: 2008313188}
+  - component: {fileID: 2008313187}
+  m_Layer: 0
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2008313186
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008313185}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 764172576}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2008313187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008313185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a4b36531d85d89641988faeb24cd083c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2008313188
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008313185}
+  m_CullTransparentMesh: 0
 --- !u!1 &2009643745
 GameObject:
   m_ObjectHideFlags: 0
@@ -63576,6 +64702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &2013788655
@@ -64043,6 +65170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &2031222412
@@ -64659,6 +65787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &2057996849
@@ -64868,6 +65997,79 @@ MonoBehaviour:
   releasedFriction: 1
   onlyInteractWith:
   - {fileID: 9096256621317489056}
+--- !u!1 &2067303481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2067303482}
+  - component: {fileID: 2067303484}
+  - component: {fileID: 2067303483}
+  m_Layer: 0
+  m_Name: BG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2067303482
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067303481}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1524017951}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2067303483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067303481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 0.2784314}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2067303484
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067303481}
+  m_CullTransparentMesh: 0
 --- !u!1 &2069883555
 GameObject:
   m_ObjectHideFlags: 0
@@ -64999,6 +66201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &2069883562
@@ -65261,6 +66464,83 @@ Transform:
   m_Father: {fileID: 28458110}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -59.12, y: 0, z: 0}
+--- !u!1 &2088262508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2088262509}
+  - component: {fileID: 2088262511}
+  - component: {fileID: 2088262510}
+  m_Layer: 0
+  m_Name: Next
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2088262509
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088262508}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 829355512}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2088262510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088262508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: c3f06529a2a254e4cb47b1076325d5d3, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Next
+--- !u!222 &2088262511
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088262508}
+  m_CullTransparentMesh: 0
 --- !u!1 &2089199844
 GameObject:
   m_ObjectHideFlags: 0
@@ -65492,6 +66772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &2110917295
@@ -65735,6 +67016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &2130175068
@@ -66119,6 +67401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!64 &2140705843
@@ -66388,6 +67671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &2142298760
@@ -66748,6 +68032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &32293813890806435
@@ -67109,6 +68394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!33 &85297120667415870
@@ -67692,6 +68978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &197152804731008770
@@ -71970,7 +73257,7 @@ Transform:
   - {fileID: 951400257}
   - {fileID: 1930859297}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1199110396493008752
 GameObject:
@@ -72472,7 +73759,7 @@ Transform:
   m_LocalScale: {x: 51.15134, y: 51.15134, z: 80.0219}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1286095565228597379
 Transform:
@@ -74724,6 +76011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &1801026539082527506
@@ -75912,13 +77200,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3078189585993518880}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.973, y: 1.221, z: -5.4028}
+  m_LocalPosition: {x: 3.2409, y: 1.4353, z: -1.501}
   m_LocalScale: {x: 0.43046954, y: 0.69177073, z: 0.43046954}
   m_Children:
   - {fileID: 2092499742043352361}
   - {fileID: 239361236}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2086541202501339970
 GameObject:
@@ -76129,6 +77417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &2106027526760739605
@@ -77960,6 +79249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!4 &2607058535856819011
@@ -78637,11 +79927,16 @@ MonoBehaviour:
   succesText: {fileID: 327030414}
   failOrder: 0
   failText: {fileID: 185354559}
+  rating: 100
+  ratingText: {fileID: 573460923}
   jamuSukses: []
   check: 0000
   isChecked: 0
   isCalculated: 0
   a: 0
+  postGame: {fileID: 488796107}
+  midGame: {fileID: 1613211651}
+  postRatingText: {fileID: 843349555}
   penghasilanText: {fileID: 425373507}
   penghasilan: 0
   timer: {fileID: 7245141476574056426}
@@ -79262,6 +80557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!23 &2852005266210603410
@@ -79612,6 +80908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!33 &2907209725533437988
@@ -80052,6 +81349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!4 &2954366581178414428
@@ -80607,8 +81905,8 @@ MonoBehaviour:
   cap: {fileID: 0}
   isOpen: 1
   inertness: 50
-  liquidColor: {r: 1, g: 1, b: 1, a: 1}
-  fillAmountPercent: 0
+  liquidColor: {r: 0.38823533, g: 0.14509805, b: 0.09411766, a: 1}
+  fillAmountPercent: 1
   customVolume: 0
 --- !u!114 &3078189585993518882
 MonoBehaviour:
@@ -81588,6 +82886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &3274816954297576853
@@ -82824,6 +84123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!33 &3525284561613721765
@@ -82996,7 +84296,7 @@ Transform:
   - {fileID: 199951338}
   - {fileID: 2800853745125620429}
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3597673676966859346
 GameObject:
@@ -83326,6 +84626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!4 &3635400158253161587
@@ -83647,6 +84948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &3647020126615343766
@@ -83793,7 +85095,7 @@ Transform:
   - {fileID: 2779827251393812137}
   - {fileID: 4424392758563624551}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &3671083354089601953
 GameObject:
@@ -85572,7 +86874,7 @@ Transform:
   - {fileID: 1514698306}
   - {fileID: 1844254142}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4119467654235536288
 MeshFilter:
@@ -86267,7 +87569,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 37162830}
+  - {fileID: 793479822}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -86631,6 +87933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &4318911389674293603
@@ -86662,7 +87965,7 @@ Transform:
   - {fileID: 4811444413813876797}
   - {fileID: 35182326}
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
 --- !u!23 &4354727073726855592
 MeshRenderer:
@@ -87795,7 +89098,7 @@ Transform:
   - {fileID: 790340000}
   - {fileID: 6211944323330335513}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!23 &4650283688179179199
 MeshRenderer:
@@ -88411,7 +89714,7 @@ Transform:
   m_Children:
   - {fileID: 1926008470736186989}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &4761780152486745361
 MeshRenderer:
@@ -88623,6 +89926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &4783011996751452778
@@ -89426,7 +90730,7 @@ Transform:
   m_LocalScale: {x: 0.54310215, y: 0.54310215, z: 0.543102}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!4 &5022831910949091535
 Transform:
@@ -89991,6 +91295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &5105156355589192349
@@ -90241,6 +91546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!4 &5134555945728958066
@@ -91809,7 +93115,7 @@ Transform:
   - {fileID: 1362773529}
   - {fileID: 697969259}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &5546663051155186085
 GameObject:
@@ -94184,6 +95490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &6088977419591107534
@@ -95580,6 +96887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!4 &6363061376516703559
@@ -96980,7 +98288,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 846905593}
+  - {fileID: 515081209}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -98475,7 +99783,7 @@ Transform:
   - {fileID: 666905399049447365}
   - {fileID: 7173241819615842000}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &7031512640558196053
 Transform:
@@ -98990,7 +100298,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32293813890806435}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -99001,7 +100309,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 247033277}
+  - {fileID: 710445549}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -99615,6 +100923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 7245141476574056425}
+  orderPaper: {fileID: 8027032363305499986}
   countdownMode: 0
   countdownText: {fileID: 1109387256}
   countdown: 3
@@ -99622,6 +100931,7 @@ MonoBehaviour:
   orderBar: {fileID: 1634405076}
   prepareText: {fileID: 708636147}
   round: 0
+  nextRound: 0
   timerText: {fileID: 17185553}
   currentTime: 0
   startingTime: 3
@@ -100401,7 +101711,7 @@ Transform:
   - {fileID: 5491153210093169469}
   - {fileID: 882013991}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7535537390542591644
 GameObject:
@@ -101349,7 +102659,7 @@ Transform:
   - {fileID: 1281100923}
   - {fileID: 81378867}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &7814712589440757696
 Transform:
@@ -101495,6 +102805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &7819326579789484169
@@ -101871,6 +103182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!23 &7961877656026739982
@@ -102254,6 +103566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!33 &8008406716050085238
@@ -102299,7 +103612,7 @@ Transform:
   - {fileID: 5804443316737609395}
   - {fileID: 1012774136}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &8027032363305499986
 GameObject:
@@ -102429,7 +103742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d25a5e24a0377740b10d60678944a57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interact: {fileID: 0}
+  interact: {fileID: 8027032363305499991}
   canGrab: 0
   randomOrder: {fileID: 2002508743}
   snapOrder: {fileID: 2782756543317555422}
@@ -103684,6 +104997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!1 &8300203656184152755
@@ -104350,7 +105664,7 @@ Transform:
   - {fileID: 1631092515202836296}
   - {fileID: 365630358}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!23 &8508211868608588831
 MeshRenderer:
@@ -104948,6 +106262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: {fileID: 0}
+  bahan: {fileID: 0}
   bahanText: {fileID: 0}
   namaBahan: 
 --- !u!114 &8611368603180052050
@@ -105698,7 +107013,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3965895512223976055}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -105709,7 +107024,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1140023751}
+  - {fileID: 1817893693}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -106248,7 +107563,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1861624400}
+  - {fileID: 1685891441}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

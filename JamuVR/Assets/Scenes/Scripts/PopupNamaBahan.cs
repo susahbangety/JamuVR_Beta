@@ -9,11 +9,13 @@
     {
         public VRTK_InteractableObject interact;
 
+        public GameObject bahan;
         public Text bahanText;
         public string namaBahan;
 
         private void Start()
         {
+            bahan = GameObject.Find("BG Nama Bahan");
             namaBahan = gameObject.name;
             bahanText = GameObject.Find("NamaBahan").GetComponent<Text>();
         }
@@ -28,6 +30,7 @@
 
         protected virtual void OnGrabbed(object sender, InteractableObjectEventArgs e)
         {
+            bahan.SetActive(true);
             bahanText.enabled = true;
             bahanText.text = namaBahan;
         }
@@ -35,6 +38,7 @@
         protected virtual void UnGrabbed(object sender, InteractableObjectEventArgs e)
         {
             bahanText.enabled = false;
+            bahan.SetActive(false);
         }
     }
 }

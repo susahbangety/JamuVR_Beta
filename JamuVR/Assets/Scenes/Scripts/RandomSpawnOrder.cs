@@ -8,6 +8,8 @@ public class RandomSpawnOrder : MonoBehaviour
 {
     public List<GameObject> doneOrdering = new List<GameObject>();
 
+    public GameObject orderBar;
+    public GameObject orderParent;
     public GameObject[] orderPaper;
     public Text clearText;
     private int wait = 2;
@@ -32,8 +34,9 @@ public class RandomSpawnOrder : MonoBehaviour
     {
         if(doneOrdering.Count == 1)
         {
-            timer.NextRound();
+            //timer.NextRound();
             doneOrdering.Clear();
+            snapOrder.PostGame();
         }
     }
 

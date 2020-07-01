@@ -17,12 +17,20 @@ public class SnapOrder : MonoBehaviour
     public int failOrder;
     public Text failText;
 
+    public int rating = 100;
+    public Text ratingText;
+
     public List<string> jamuSukses = new List<string>();
     public bool[] check;
     public bool isChecked;
     public bool isCalculated;
 
     public int a = 0;
+
+    [Header("Post Game")]
+    public GameObject postGame;
+    public GameObject midGame;
+    public Text postRatingText;
 
     [Header("Penghasilan")]
     public Text penghasilanText;
@@ -63,10 +71,19 @@ public class SnapOrder : MonoBehaviour
     {
         penghasilan += 2000;
         penghasilanText.text = penghasilan.ToString();
+        rating -= 10;
+        ratingText.text = rating.ToString() +"%";
     }
 
     public void DoneOrdering(string namaObject)
     {
         jamuOrder.Remove(namaObject);
+    }
+
+    public void PostGame()
+    {
+        postGame.SetActive(true);
+        midGame.SetActive(false);
+        postRatingText.text = rating.ToString();
     }
 }

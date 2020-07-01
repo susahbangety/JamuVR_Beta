@@ -11,6 +11,7 @@ public class RandomOrder : MonoBehaviour
     public List<Ordering> ordering;
 
     public GameObject orderPaper;
+    public GameObject originalPos;
     public float orderingTime;
     public Text orderTimeText;
 
@@ -50,7 +51,11 @@ public class RandomOrder : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timer = GameObject.Find("Ring Bell").GetComponent<Timer>(); ;
+        timer = GameObject.Find("Ring Bell").GetComponent<Timer>();
+        snapOrder = GameObject.Find("SnapOrderan").GetComponent<SnapOrder>();
+        randomSpawnOrder = GameObject.Find("OrderBar").GetComponent<RandomSpawnOrder>();
+        orderTimeText = GameObject.Find("OrderTimer").GetComponent<Text>();
+        originalPos = GameObject.Find("Order");
 
         if (orderPaper.activeSelf == true)
         {
@@ -92,8 +97,12 @@ public class RandomOrder : MonoBehaviour
                 if ((snapOrder.jamuSukses.Count > 0 && snapOrder.jamuSukses.Count == snapOrder.jamuOrder.Count) || orderingTime == 0)
                 {
                     orderPaper.SetActive(false);
+                    orderPaper.transform.position = originalPos.transform.position;
+                    orderPaper.transform.rotation = originalPos.transform.rotation;
                     snapOrder.jamuOrder.Clear();
+                    snapOrder.jamuSukses.Clear();
                     orderingTime = 0;
+                    orderTimeText.text = "";
                     //orderPaper.GetComponent<GrabOrder>().canGrab = false;
                     randomSpawnOrder.doneOrdering.Add(orderPaper);
                 }
@@ -103,6 +112,7 @@ public class RandomOrder : MonoBehaviour
             {
                 isPicking = false;
             }
+        
     }
 
     void Order()

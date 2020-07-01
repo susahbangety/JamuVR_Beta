@@ -12,6 +12,11 @@
         public RandomOrder randomOrder;
         public SnapOrder snapOrder;
 
+        private void Start()
+        {
+            snapOrder = GameObject.Find("SnapOrderan").GetComponent<SnapOrder>();
+        }
+
         private void Update()
         {
             if (snapOrder.jamuOrder.Count > 0/* && snapOrder.strukOrder.Contains(gameObject)*/)
