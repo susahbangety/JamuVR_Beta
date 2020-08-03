@@ -5,20 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject optionMenu;
+
     public void PlayButton()
     {
-        Debug.Log("Play");
-        //SceneManager.LoadScene("Gameplay");
+        SceneManager.LoadScene("Gameplay");
     }
 
     public void OptionButton()
     {
+        //optionMenu.SetActive(true);
         Debug.Log("Option");
     }
 
     public void ExitButton()
     {
-        //Application.Quit();
-        Debug.Log("Exit");
+        Application.Quit();
     }
 }

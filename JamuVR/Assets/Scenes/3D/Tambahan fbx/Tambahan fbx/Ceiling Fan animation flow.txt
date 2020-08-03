@@ -1,0 +1,6 @@
+Default = OFF
+Turning ON = Baru dinyalain (pelan ke cepet)
+ON Rotating = Nyala full 
+Turning OFF = Dari nyala mau dimatiin (cepet ke pelan)
+
+Default -> Turning On -> ON Rotating -> Turning OFF -> Default

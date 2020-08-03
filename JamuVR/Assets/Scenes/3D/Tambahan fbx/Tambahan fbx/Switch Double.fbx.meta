@@ -1,0 +1,162 @@
+fileFormatVersion: 2
+guid: 82da980f128464547ad8c459714c5075
+ModelImporter:
+  serializedVersion: 19300
+  internalIDToNameTable:
+  - first:
+      74: -2414678273488389777
+    second: Right Trigger On
+  - first:
+      74: 28324320763661504
+    second: Right Trigger Off
+  - first:
+      74: 7969012378256067591
+    second: Right Trigger On.001
+  - first:
+      74: 320474746124842941
+    second: Right Trigger Off.001
+  - first:
+      74: -3752588236743912822
+    second: Left Trigger Off
+  - first:
+      74: -7717983509810380945
+    second: Left Trigger On
+  - first:
+      74: 9205021538927846238
+    second: Left Trigger Off.001
+  - first:
+      74: 7320118746308347098
+    second: Switch Box|Action.001
+  - first:
+      74: 3511743146399278715
+    second: Switch Box|Left Trigger Off
+  - first:
+      74: -3181424918733531156
+    second: Switch Box|Left Trigger On
+  - first:
+      74: -3073546395567693312
+    second: Switch Box|Right Trigger Off
+  - first:
+      74: 9219320564784525572
+    second: Switch Box|Right Trigger On
+  - first:
+      74: -5553664952279927514
+    second: Switch Box Right Trigger|Action.001
+  - first:
+      74: -4183821260967575309
+    second: Switch Box Right Trigger|Left Trigger Off
+  - first:
+      74: 6704844948464755203
+    second: Switch Box Right Trigger|Left Trigger On
+  - first:
+      74: -2091655833235644954
+    second: Switch Box Right Trigger|Right Trigger Off
+  - first:
+      74: 3151064608566897714
+    second: Switch Box Right Trigger|Right Trigger On
+  - first:
+      74: -7096427454594216306
+    second: Switch Box Left Trigger|Action.001
+  - first:
+      74: -712211509577782505
+    second: Switch Box Left Trigger|Left Trigger Off
+  - first:
+      74: 7707113941256756654
+    second: Switch Box Left Trigger|Left Trigger On
+  - first:
+      74: 9211450662460357158
+    second: Switch Box Left Trigger|Right Trigger Off
+  - first:
+      74: -8841249559962828279
+    second: Switch Box Left Trigger|Right Trigger On
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

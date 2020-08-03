@@ -16,14 +16,12 @@
 
             interact.InteractableObjectSnappedToDropZone += OnSnap;
             interact.InteractableObjectUnsnappedFromDropZone += OnRelease;
-
-            
         }
 
         protected virtual void OnSnap(object sender, InteractableObjectEventArgs e)
         {
             interact.validDrop = VRTK_InteractableObject.ValidDropTypes.DropValidSnapDropZone;
-            //gameObject.GetComponent<Collider>().enabled = false;
+            gameObject.GetComponent<Collider>().enabled = false;
 
             parent = interact.GetStoredSnapDropZone().gameObject;
             gameObject.transform.parent = parent.transform;
@@ -32,8 +30,8 @@
         protected virtual void OnRelease(object sender, InteractableObjectEventArgs e)
         {
             interact.validDrop = VRTK_InteractableObject.ValidDropTypes.DropAnywhere;
-            //gameObject.GetComponent<Collider>().enabled = true;
-            //gameObject.transform.parent = null;
+            gameObject.GetComponent<Collider>().enabled = true;
+            gameObject.transform.parent = null;
         }
 
         

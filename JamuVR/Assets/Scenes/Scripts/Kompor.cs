@@ -8,14 +8,14 @@
     public class Kompor : MonoBehaviour
     {
         public VRTK_BaseControllable baseControl;
-
+        
         public GameObject fire;
 
         protected virtual void OnEnable()
         {
             baseControl = (baseControl == null ? GetComponent<VRTK_BaseControllable>() : baseControl);
 
-            baseControl.MaxLimitReached += EnableFire;
+            baseControl.MinLimitExited += EnableFire;
             baseControl.MinLimitReached += DisableFire;
         }
 

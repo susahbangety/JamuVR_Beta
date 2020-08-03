@@ -6,8 +6,9 @@
 
     public class Panci : MonoBehaviour
     {
+        public bool isCooking;
         public float currTemperature;
-        public float maxTemperature = 100f;
+        //public float maxTemperature = 100f;
 
         public GameObject insideCollider;
 

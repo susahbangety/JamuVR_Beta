@@ -54,7 +54,7 @@ public class RandomOrder : MonoBehaviour
         timer = GameObject.Find("Ring Bell").GetComponent<Timer>();
         snapOrder = GameObject.Find("SnapOrderan").GetComponent<SnapOrder>();
         randomSpawnOrder = GameObject.Find("OrderBar").GetComponent<RandomSpawnOrder>();
-        orderTimeText = GameObject.Find("OrderTimer").GetComponent<Text>();
+        //orderTimeText = GameObject.Find("OrderTimer").GetComponent<Text>();
         originalPos = GameObject.Find("Order");
 
         if (orderPaper.activeSelf == true)

@@ -72,14 +72,6 @@
         public void AddHullComponents(GameObject go)
         {
             go.AddComponent<CapMaterials>().capMaterial = go.GetComponent<Renderer>().materials[1];
-            //if (gameObject.name == "Gula aren")
-            //{
-            //    go.AddComponent<CapMaterials>().capMaterial = go.GetComponent<Renderer>().materials[0];
-            //}
-            //else
-            //{
-
-            //}
 
             go.layer = 9;
             Rigidbody rb = go.AddComponent<Rigidbody>();
@@ -87,6 +79,7 @@
             MeshCollider collider = go.AddComponent<MeshCollider>();
             collider.convex = true;
             VRTK_InteractableObject Interactable = go.AddComponent<VRTK_InteractableObject>();
+            go.AddComponent<DestroyBahan>();
             Interactable.isGrabbable = true;
             go.tag = "Sliceable";
 
